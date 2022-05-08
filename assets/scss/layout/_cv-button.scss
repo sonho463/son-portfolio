@@ -1,0 +1,17 @@
+@use "../foundation/variables" as v;
+
+.l-cv-button {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+	@include v.mq(md){
+		bottom: 90px;
+	}
+	&__link{
+		display: block;
+		width: 150px;
+		@include v.mq(md){
+			width: 90px;
+		}
+	}
+}

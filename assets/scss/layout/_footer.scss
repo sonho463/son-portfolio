@@ -1,0 +1,70 @@
+@use "../foundation/variables" as v;
+
+.l-footer{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background-color: v.$shadow-cBlue;
+	padding: 20px 5%;
+	@include v.mq(sm){
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		margin-bottom: 80px;
+	}
+}
+
+.l-footer__logo{
+	width: 18%;
+	@include v.mq(sm){
+		width: 40%;
+	}
+}
+
+.l-footer__cv{
+	display: inline-block;
+	position: absolute;
+	top:20px;
+	right: 5%;
+	width: 10%;
+	@include v.mq(sm){
+		position: static;
+		width: 20%;
+	}
+}
+
+.l-footer__nav{
+	position: absolute;
+	bottom: 20px;
+	left: 5%;
+	@include v.mq(sm){
+		position: static;
+	}
+}
+
+
+.l-footer__menu{
+	display: flex;
+	gap: 10px;
+	&__item{
+		font-size:3.2rem;
+		font-family: v.$title-font;
+		@include v.mq(sm){
+			font-size: 2.0rem;
+		}
+	}
+	&__item + .l-footer__menu__item::before{
+		content:'|';
+		margin-right: 10px;
+	}
+}
+
+.l-footer__copyright{
+	position: absolute;
+	right: 5%;
+	bottom: 20px;
+	@include v.mq(sm){
+		position:static;
+	}
+}

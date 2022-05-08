@@ -1,0 +1,37 @@
+@use "../foundation/variables" as v;
+
+.p-hamburger-btn {
+  display: none;
+  @include v.mq(sm) {
+    display: block;
+  }
+  position: absolute;
+  right: 0;
+	// bottom: 0;
+  padding: 10px;
+  &__line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: v.$main-primary;
+    transition: all 0.7s;
+
+    + span {
+      margin-top: 8px;
+    }
+  }
+}
+
+.p-hamburger-btn.open {
+  .p-hamburger-btn__line {
+    &:first-of-type {
+      transform: translateY(11px) rotate(45deg);
+    }
+    &:nth-of-type(2) {
+      opacity: 0;
+    }
+    &:last-of-type {
+      transform: translateY(-11px) rotate(-225deg);
+    }
+  }
+}

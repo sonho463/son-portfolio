@@ -1,0 +1,70 @@
+@use "../foundation/variables" as v;
+
+.p-price__grid-table {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto ;
+  grid-template-columns: 1.5fr 3fr 1fr;
+	grid-gap: 20px 30px;
+	margin-right: auto;
+	margin-left: auto;
+	@include v.mq(md){
+		display: block;
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+.p-price{
+	&__heading{
+		background-color: v.$shadow-cBlue;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2.4rem;
+		padding: 20px 5%;
+		&--custom{
+			grid-row-start:5;
+			grid-row-end:9;
+		}
+		@include v.mq(md){
+			margin-top: 30px;
+		}
+	}
+	&__desc{
+		background-color: v.$color-white;
+		padding: 30px 5%;
+		font-size: 2.0rem;
+		@include v.mq(md){
+			font-size: 1.6rem;
+			&--i-charge{
+				padding: 30px 5% 5px;
+				text-align: center;
+			}
+		}
+	}
+	&__price{
+		background-color: v.$color-white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2.4rem;
+	}
+}
+
+.p-price__notice{
+	margin-top: 38px;
+	@include v.mq(md){
+		margin-top: 8px;
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	&__text{
+		font-size: 2.4rem;
+		text-align: left;
+		@include v.mq(md){
+			font-size: 1.6rem;
+		}
+	}
+}

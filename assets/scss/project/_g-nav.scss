@@ -1,0 +1,67 @@
+@use "../foundation/variables" as v;
+
+.p-g-nav {
+  background-color: v.$main-secondary;
+	margin-left: auto;
+	height: 100%;
+  // display: none;
+	@include v.mq(md){
+	}
+  &.is-active {
+		transform: translateX(0);
+  }
+  &__inner {
+    width: 56%;
+		height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+		@include v.mq(md){
+			width: 100%;
+		}
+  }
+  &__item {
+    font-size: 2.4rem;
+		@include v.mq(md){
+			font-size: 1.4rem;
+		}
+  }
+  &__item--icon {
+    width: 100px;
+		@include v.mq(md){
+			width: 60px;
+		}
+  }
+	&__link{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	&__link::before{
+		content:'';
+		display: block;
+		background-size: 80%;
+		background-position: center bottom;
+		width: 65px;height: 65px;
+		background-repeat: no-repeat;
+	}
+	&__link{
+		&--about::before{
+			background-image: url(../images/bottom/about.png);
+		}
+		&--works::before{
+			background-image: url(../images/bottom/works.png);
+		}
+		&--skills::before{
+			background-image: url(../images/bottom/skills.png);
+		}
+		&--career::before{
+		background-image: url(../images/bottom/career.png);
+		}
+
+	}
+
+}

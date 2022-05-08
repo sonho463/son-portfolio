@@ -1,0 +1,55 @@
+@use "../foundation/variables" as v;
+
+.p-g-nav {
+  background-color: v.$main-secondary;
+	margin-left: auto;
+  // display: none;
+  @include v.mq(sm) {
+    transform: translateX(100%);
+    transition: all 0.7s;
+		width: 60%;height: 100%;
+  }
+  &.is-active {
+		transform: translateX(0);
+  }
+  &__inner {
+    width: 56%;
+		height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include v.mq(sm) {
+			position: absolute;
+      background-color: v.$shadow-cBlue;
+      color: v.$main-secondary;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      padding-bottom: 40px;
+      height: fit-content;
+    }
+  }
+  &__item {
+    font-size: 2.4rem;
+    @include v.mq(sm) {
+      padding: 30px 5%;
+      width: 100%;
+      text-align: center;
+      border-bottom: #fff solid 1px;
+      border-top: #fff solid 1px;
+    }
+  }
+  &__item--icon {
+    width: 100px;
+    @include v.mq(sm) {
+      width: 60px;
+      order: -2;
+      margin-top: 5px;
+      border: none;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+  }
+}

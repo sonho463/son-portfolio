@@ -1,0 +1,96 @@
+@use "../foundation/variables" as v;
+
+.p-mv {
+  background-color: v.$main-secondary;
+  font-family: senobi-gothic, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: v.$main-primary;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  position: relative;
+	@include v.mq(sm){
+		padding-bottom: 0;
+	}
+}
+
+.p-mv {
+  &__heading {
+    position: relative;
+    font-weight: 700;
+    &__text {
+			position: relative;
+    }
+  }
+  &__heading::before {
+		content: "";
+    display: block;
+    position: absolute;
+		transform:translate(-30%, -70%);
+    background-image: url(../images/mv/yellow-circle.png);
+    background-size: contain;
+		background-repeat: no-repeat;
+    width: 210px;
+    height: 210px;
+  }
+  &__heading::after {
+		content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -80%;
+    background-image: url(../images/mv/yellow-circle.png);
+    background-size: contain;
+		background-repeat: no-repeat;
+    width: 130px;
+    height: 130px;
+		@include v.mq(sm){
+			bottom: -10%;
+		}
+  }
+}
+
+.p-mv {
+	&__sub-heading{
+		position: relative;
+	}
+	&__sub-heading__text {
+		font-size: 2.4rem;
+		@include v.mq(sm){
+			font-size: 1.8rem;
+		}
+  }
+  &__heading__text {
+		font-size: 7.2rem;
+		@include v.mq(sm){
+			font-size: 4rem;
+		}
+  }
+  &__face-photo {
+		width: 160px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__lead__text {
+		font-size: 4rem;
+		@include v.mq(sm){
+			font-size: 3.2rem;
+		}
+  }
+}
+
+.p-mv {
+  &__circle-left {
+    position: absolute;
+    width: 210px;
+    top: 5%;
+    left: 10%;
+  }
+  &__circle-right {
+		position: absolute;
+    width: 150px;
+    right: 5%;
+    bottom: 5%;
+  }
+}

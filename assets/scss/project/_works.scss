@@ -1,0 +1,122 @@
+@use "../foundation/variables" as v;
+
+// カードユニットとカードの枠スタイル
+.p-works {
+  &__card-list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+		@include v.mq(lg){
+			column-gap: 0;
+			align-items: flex-start;
+		}
+  }
+	&__card-wrapper{
+		width: 32%;
+
+	}
+  &__card {
+		padding: 32px 5%;
+		height: 100%;
+    // width: 100%;
+    @include v.mq(lg) {
+			width: 100%;
+			max-width: 375px;
+			margin-right: auto;
+			margin-left: auto;
+      padding: 32px 5%;
+    }
+		@include v.mq(sm){
+			padding: 32px 15%;
+		}
+    border: solid 1px v.$color-border-gray;
+    background-color: #fff;
+    box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.15),
+      6px 6px 6px 0px rgba(0, 0, 0, 0.15) inset;
+    transition: background-color 1s;
+  }
+  &__card__inner {
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+}
+
+// カードの中のコンポーネントのスタイル
+.p-works {
+  &__drop {
+    height: auto;
+    background-color: v.$main-secondary;
+    border: solid 1px v.$color-border-gray;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.15);
+		overflow: hidden;
+  }
+  &__drop__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+		padding-top: 20px;
+  }
+  &__title {
+    font-family: v.$title-font;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-align: center;
+		letter-spacing: -.2em;
+  }
+  &__text {
+    margin-top: 40px;
+    font-size: 1.8rem;
+    letter-spacing: 0.05em;
+    padding-bottom: 80px;
+    @include v.mq(lg) {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+// 詳しく見るボタン
+.p-works__nav-to-detail {
+  display: inline-block;
+  width: 40%;
+  // align-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+
+
+.swiper-button-prev {
+  font-size: 3rem;
+	transform: rotate(180deg);
+	i{
+		color: v.$main-primary;
+	}
+  &::after {
+    display: none;
+  }
+}
+.swiper-button-next {
+  font-size: 3rem;
+
+	i{
+		color: v.$main-primary;
+	}
+  &::after {
+    display: none;
+  }
+}
+
+.swiper-slide{
+	height: auto;
+}

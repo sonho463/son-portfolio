@@ -1,0 +1,20 @@
+@use "../foundation/variables" as v;
+
+
+.is-hidden{
+	display: none;
+}
+
+.is-active{
+	display: block;
+}
+
+.inline-block{
+	display: inline-block;
+}
+
+.active-pc{
+	@include v.mq(sm){
+		display: none;
+	}
+}

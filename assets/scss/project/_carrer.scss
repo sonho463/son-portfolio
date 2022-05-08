@@ -1,0 +1,63 @@
+@use "../foundation/variables" as v;
+
+.p-career__grid-table {
+  display: grid;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 260px 1fr;
+  grid-gap: 10px 20px;
+	@include v.mq(md){
+		display: block;
+	}
+}
+
+.p-career{
+	&__date{
+		position: relative;
+		display: flex;
+		align-items: flex-start;
+		background-color: v.$main-secondary;
+		justify-content: center;
+		padding: 20px 5%;
+		@include v.mq(md){
+			margin-top: 20px;
+		}
+	}
+	&__date::before{
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		background-image: url(../images/career/circle.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		// background-color: v.$color-white;
+		width: 30px;
+		height: 30px;
+		padding-left: 5px;
+		padding-right: 5px;
+		transform: translateX(-40px);
+		@include v.mq(lg){
+			transform: translateX(-10px);
+		}
+	}
+	&__date::after{
+		content:'';
+		display: block;
+		width: 15px;
+		height: 120%;
+		border-left: 10px solid v.$accent-primary;
+		position: absolute;
+		top: 0;left: -30px;
+		@include v.mq(lg){
+			left: 0;
+			height: 100%;
+		}
+	}
+	&__desc	{
+		background-color: v.$main-secondary;
+		padding: 20px 5%;
+	}
+}

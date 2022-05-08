@@ -1,0 +1,16 @@
+@use "../foundation/variables" as v;
+
+.c-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1;
+}
+.c-desc {
+	font-size: 2.0rem;
+	font-weight: normal;
+	line-height: 1.4;
+	@include v.mq(md){
+		font-size: 1.6rem;
+		line-height: 1.6;
+	}
+}

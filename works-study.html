@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<title>WEBSON・そんほんす</title>
+	<script>
+		(function (d) {
+			var config = {
+				kitId: 'epb1ern',
+				scriptTimeout: 3000,
+				async: true
+			},
+				h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+		})(document);
+	</script>
+</head>
+
+<body>
+	<div class="overflow-hidden">
+		<header class="l-header">
+			<nav class="p-g-nav js-g-nav">
+				<ul class="p-g-nav__inner">
+					<li class="p-g-nav__item">
+						<a href="#about" class="p-g-nav__link p-g-nav__link--about">
+							アバウト
+						</a>
+					</li>
+					<li class="p-g-nav__item">
+						<a href="#works" class="p-g-nav__link p-g-nav__link--works">
+							実績
+						</a>
+					</li>
+					<li class="p-g-nav__item p-g-nav__item--icon">
+						<a href="#" class="p-g-nav__link--icon">
+							<img src="./assets/images/header/ico_webson.png" alt="">
+						</a>
+					</li>
+					<li class="p-g-nav__item">
+						<a href="#skills" class="p-g-nav__link p-g-nav__link--skills">
+							スキル
+						</a>
+					</li>
+					<li class="p-g-nav__item">
+						<a href="#career" class="p-g-nav__link p-g-nav__link--career">
+							経歴
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- <div class="p-hamburger-btn js-hamburger-btn">
+				<span class="p-hamburger-btn__line"></span>
+				<span class="p-hamburger-btn__line"></span>
+				<span class="p-hamburger-btn__line"></span>
+			</div> -->
+		</header>
+		<nav class="l-cv-button js-cv-button">
+			<a href="#" class="l-cv-button__link">
+				<img class="l-cv-button__image" src="./assets/images/mv/cv-button.png" alt="お問い合わせ">
+			</a>
+		</nav>
+
+
+		<div class="l-main">
+			<section class="p-mv">
+				<div class="c-inner">
+					<!-- <p class="p-mv__circle-left">
+					<img src="./assets/images/mv/yellow-circle.png" alt="">
+				</p> -->
+					<div class="p-mv__sub-heading">
+						<p class="p-mv__sub-heading__text">大阪府八尾市</p>
+						<p class="p-mv__sub-heading__text">ウェブ制作・ウェブ開発 フリーランス</p>
+					</div>
+					<div class="p-mv__heading">
+						<h1 class="p-mv__heading__text">
+							<span class="inline-block">
+								WEBSON
+							</span>
+							<span class="inline-block active-pc">・</span>
+							<span class="inline-block">
+								そんほんす
+							</span>
+							<span class="inline-block">
+								（孫弘樹）
+							</span>
+						</h1>
+					</div>
+					<!-- <p class="p-mv__circle-right">
+					<img src="./assets/images/mv/yellow-circle.png" alt="">
+				</p> -->
+					<figure class="p-mv__face-photo">
+						<img src="./assets/images/mv/face.png" alt="" class="p-mv__face-photo__image">
+					</figure>
+					<div class="p-mv__lead">
+						<p class="p-mv__lead__text">コードを書くことが大好きです。</p>
+					</div>
+				</div>
+			</section>
+			<section id="about" class="p-about c-section">
+				<!--ここに黒板背景 -->
+				<div class="c-inner">
+					<div class="c-section__title">
+						<!-- beforeで円のあしらい afterでアンダーライン　h2?-->
+						<h2 class="c-section__title__text">
+							アバウト〜私について
+						</h2>
+					</div>
+					<section class="p-about__bg">
+						<div class="p-about__text__block">
+							<div class="p-about__date-unit">
+								<p class="p-about__date">
+									<span id="js_month" class="p-about__month">○</span>月
+									<span id="js_day" class="p-about__day">○</span>日
+								</p>
+								<p class="p-about__charge">日直</p>
+								<p class="p-about__name">そんほんす</p>
+							</div>
+							<div class="p-about__text">
+								どうしても、コードを書く仕事をしたくて、<br class="active-pc">
+								２０２０年３月から本気出して勉強をはじめました。<br class="active-pc">
+							</div>
+							<div class="p-about__text">
+								先輩フリーランスや<br class="active-pc">
+								所属コミュニティから案件をいただいて、<br class="active-pc">
+								２件（２０２２年３月現在）<br class="active-pc">
+								納品できたところです。<br class="active-pc">
+
+							</div>
+							<div class="p-about__text">
+								コーディングを中心に<br class="active-pc">
+								さらに技術を磨いていきたいと考えています。
+							</div>
+
+						</div>
+					</section>
+			</section>
+			<section id="works" class="p-works c-section">
+				<div class="c-inner">
+					<div class="c-section__title">
+						<h2 class="c-section__title__text">
+							制作実績・これまでの活動
+						</h2>
+					</div>
+
+					<div class="js-card-outer swiper">
+						<ul class="p-works__card-list swiper-wrapper js-card-list">
+							<li class="p-works__card-wrapper swiper-slide js-card">
+								<div class="p-works__card">
+									<a href="#" class="p-works__card__inner">
+										<div class="p-works__drop">
+											<div class="p-works__drop__inner">
+												<h3 class="p-works__title">ウェブ制作</h3>
+											</div>
+										</div>
+										<p class="p-works__text">
+											WordPressオリジナルテーマコーディング案件、ウェブ制作会社LPコーディング案件を納品。自分の所属団体のHPデザイン〜コーディングなど
+										</p>
+										<p href="#" class="p-works__nav-to-detail">
+											<img src="./assets/images/works/view-details.png" class="p-works__nav-to-detail__image" alt="">
+										</p>
+									</a>
+								</div>
+							</li>
+							<li class="p-works__card-wrapper swiper-slide js-card">
+								<div class="p-works__card">
+									<a href="#" class="p-works__card__inner">
+										<div class="p-works__drop">
+											<div class="p-works__drop__inner">
+												<h3 class="p-works__title">ウェブ開発</h3>
+											</div>
+										</div>
+										<p class="p-works__text">
+											GatsbyJSでサイトを作成。子ども用のプログラミング・タイピングサイトのリンク集、ヘッドレスCMSブログを構築など
+										</p>
+										<p href="#" class="p-works__nav-to-detail">
+											<img src="./assets/images/works/view-details.png" class="p-works__nav-to-detail__image" alt="">
+										</p>
+									</a>
+
+								</div>
+							</li>
+							<li class="p-works__card-wrapper swiper-slide js-card">
+								<div class="p-works__card">
+									<a href="#" class="p-works__card__inner">
+										<div class="p-works__drop">
+											<div class="p-works__drop__inner">
+												<h3 class="p-works__title">勉強会ドリブン<br />勉強法</h3>
+											</div>
+										</div>
+										<p class="p-works__text">
+											LPコーディング案件を納品。自分の所属団体のHPデザイン〜コーディングなど
+										</p>
+										<p href="#" class="p-works__nav-to-detail">
+											<img src="./assets/images/works/view-details.png" class="p-works__nav-to-detail__image" alt="">
+										</p>
+									</a>
+								</div>
+							</li>
+						</ul>
+						<div class="swiper-pagination"></div>
+
+						<!-- If we need navigation buttons -->
+						<div class="swiper-button-prev">
+							<i class="fa-solid fa-play"></i>
+						</div>
+						<div class="swiper-button-next">
+							<i class="fa-solid fa-play"></i>
+						</div>
+
+						<!-- If we need scrollbar -->
+						<div class="swiper-scrollbar"></div>
+					</div>
+				</div>
+			</section>
+			<section id="skills" class="p-skills c-section">
+				<div class="c-inner">
+					<div class="c-section__title">
+						<h2 class="c-section__title__text">
+							スキル
+						</h2>
+					</div>
+					<ul class="p-skills__article-list">
+						<li class="p-skills__article__item">
+							<figure class="p-skills__article__icon p-skills__article__icon--html">
+								<img class="p-skills__article__icon__image" src="./assets/images/skills/ico_html.png" alt="">
+							</figure>
+							<div class="p-skills__article__text-block">
+								<h3 class="p-skills__article__title">HTML/CSS/JavaScript</h3>
+								<p class="p-skills__article__text">
+									ウェブ周りの基本、HTML、CSS、JavaScriptは常にアップデートしてまいります。セマンティックなHTML、SEOを意識した構造、BEM,FLOCSS,PRECSSなどのCSS設計思想、JavaScript、JQueryも対応できます。
+								</p>
+							</div>
+						</li>
+						<li class="p-skills__article__item">
+							<figure class="p-skills__article__icon">
+								<img class="p-skills__article__icon__image" src="./assets/images/skills/ico_wp.png" alt="">
+							</figure>
+							<div class="p-skills__article__text-block">
+								<h3 class="p-skills__article__title">Wordpress</h3>
+								<p class="p-skills__article__text">
+									WordPress既存テーマでのサイト構築。静的サイトのWordPress化も可能です。PHPのロジックを使ってできるだけ効率的にコードを書きます。</p>
+							</div>
+						</li>
+						<li class="p-skills__article__item">
+							<figure class="p-skills__article__icon">
+								<img class="p-skills__article__icon__image" src="./assets/images/skills/ico_nodejs.png"
+									alt="nodejsアイコン">
+							</figure>
+							<div class="p-skills__article__text-block">
+								<h3 class="p-skills__article__title">タスクランナー Node.js</h3>
+								<p class="p-skills__article__text">タスクランナーにnode
+									Scriptを使っています。scssのコンパイル、prefixの付与など。静的サイトのコーディングをできるだけ効率化します。</p>
+							</div>
+						</li>
+						<li class="p-skills__article__item">
+							<figure class="p-skills__article__icon">
+								<img class="p-skills__article__icon__image" src="./assets/images/skills/ico_gatsbyjs.png" alt="">
+							</figure>
+							<div class="p-skills__article__text-block">
+								<h3 class="p-skills__article__title">Gatsby.js</h3>
+								<p class="p-skills__article__text">
+									静的サイトジェネレータGatsbyのテーマを使って、サイトを構築できます。また、ブログのHTML，CSSデータをGtasbyで構築しました。
+								</p>
+							</div>
+						</li>
+						<li class="p-skills__article__item">
+							<figure class="p-skills__article__icon">
+								<img class="p-skills__article__icon__image" src="./assets/images/skills/ico_XD.png" alt="xdのアイコン">
+							</figure>
+							<div class="p-skills__article__text-block">
+								<h3 class="p-skills__article__title">AdobeXD</h3>
+								<p class="p-skills__article__text">デザインは主にAdobeXDを使用しています。コンポーネント、レイヤーを意識して、見やすく、コーディングもしやすいデザインを作成します。
+								</p>
+							</div>
+						</li>
+						<li class="p-skills__article__item">
+							<figure class="p-skills__article__icon">
+								<img class="p-skills__article__icon__image" src="./assets/images/skills/ico_wbm.png"
+									alt="ホワイトボードミーティングのアイコン">
+							</figure>
+							<div class="p-skills__article__text-block">
+								<h3 class="p-skills__article__title">ホワイトボード・ミーティング®</h3>
+								<p class="p-skills__article__text">ホワイトボードミーティング®というファシリテーションスキルの認定講師資格を持っています。ヒヤリングや会議の運営で力を発揮します。</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="p-price c-section">
+				<div class="c-inner">
+					<div class="c-section__title">
+						<h2 class="c-section__title__text">
+							料金
+						</h2>
+					</div>
+					<section class="c-section__lead">
+						<p class="c-section__lead__text">
+							以下はめやすです。詳しくはお問い合わせ下さい。<br>
+							ページごとのデザイン、コーディングなど個別の料金についてはこちら。
+						</p>
+					</section>
+
+					<section class="p-price__grid-table">
+
+						<div class="p-price__heading">
+							<h3 class="p-price__heading__text">ご相談・お見積り</h3>
+						</div>
+						<div class="p-price__desc">
+							<p class="p-price__desc__text">
+								ホームページを作りたい！なにか役に立つのではないか？そう思ったときには、お気軽にご相談下さい。サーバー契約、保守運用などについても、丁寧にご説明いたします。
+							</p>
+						</div>
+						<div class="p-price__price">
+							<p class="p-price__price_text">
+								無料
+							</p>
+						</div>
+						<div class="p-price__heading">
+							<h3 class="p-price__heading__text">ベーシック</h3>
+						</div>
+						<div class="p-price__desc">
+							<p class="p-price__desc__text">
+								オリジナルデザイン<br>
+								全4ページ構成　TOP　＋　問い合わせ　＋　2ページ<br>
+								基本的な構成でまずはホームページを持ちたいという方におすすめです。
+							</p>
+						</div>
+						<div class="p-price__price">
+							<p class="p-price__price_text">
+								350000円〜
+							</p>
+						</div>
+						<div class="p-price__heading">
+							<h3 class="p-price__heading__text">スタンダード</h3>
+						</div>
+						<div class="p-price__desc">
+							<p class="p-price__desc__text">
+								オリジナルデザイン<br>
+								全5ページ構成　TOP　＋　問い合わせ　＋　3ページ　＋　CMS <br>
+								基本的な構成に加え、お知らせ、ブログなどをお客様で更新していただけるシステムWordPressを導入します。
+							</p>
+						</div>
+						<div class="p-price__price">
+							<p class="p-price__price_text">
+								460000円〜
+							</p>
+						</div>
+						<div class="p-price__heading">
+							<h3 class="p-price__heading__text">プレミアム</h3>
+						</div>
+						<div class="p-price__desc">
+							<p class="p-price__desc__text">
+								オリジナルデザイン<br>
+								全10ページ　TOP　＋　問い合わせ　＋　8ページ　＋　CMS <br>
+								基本的な構成に加え、お知らせ、ブログなど更新できるページ、さらに、御社の強みを分析し、打ち出すページを加えることで、ページをユーザーに届きやすくできます。
+							</p>
+						</div>
+						<div class="p-price__price">
+							<p class="p-price__price_text">
+								600000円〜
+							</p>
+						</div>
+						<div class="p-price__heading p-price__heading--custom">
+							<h3 class="p-price__heading__text">個別料金</h3>
+						</div>
+						<div class="p-price__desc p-price__desc--i-charge">
+							<p class="p-price__desc__text">
+								デザイン　トップページ　1ページ
+							</p>
+						</div>
+						<div class="p-price__price">
+							<p class="p-price__price_text">
+								25000円
+							</p>
+						</div>
+						<div class="p-price__desc p-price__desc--i-charge">
+							<p class="p-price__desc__text">
+								デザイン　下層ページ　1ページ
+							</p>
+						</div>
+						<div class="p-price__price">
+							<p class="p-price__price_text">
+								15000円
+							</p>
+						</div>
+						<div class="p-price__desc p-price__desc--i-charge">
+							<p class="p-price__desc__text">
+								コーディング　トップページ　1ページ
+							</p>
+						</div>
+						<div class="p-price__price">
+							<p class="p-price__price_text">
+								25000円
+							</p>
+						</div>
+						<div class="p-price__desc p-price__desc--i-charge">
+							<p class="p-price__desc__text">
+								コーディング　下層　1ページ
+							</p>
+						</div>
+						<div class="p-price__price">
+							<p class="p-price__price_text">
+								10000円
+							</p>
+						</div>
+					</section>
+					<section class="p-price__notice">
+						<p class="p-price__notice__text">
+							※様々なご希望をお聞かせ頂いた上で、お見積りをいたします。まずは、お気軽にお問い合わせ下さい。
+						</p>
+					</section>
+			</section>
+			<section id="career" class="p-career c-section">
+				<div class="c-inner">
+					<div class="c-section__title">
+						<h2 class="c-section__title__text">
+							経歴
+						</h2>
+					</div>
+					<section class="c-section__lead">
+						<p class="c-section__lead__text">
+							私のこれまでの経歴です。
+							仕事のこととPCに関わることを中心に記載しています。
+						</p>
+					</section>
+					<section class="p-career__grid-table">
+						<div class="p-career__date">
+							<p class="p-career__date__text">
+								1972年7月18日
+							</p>
+						</div>
+						<div class="p-career__desc">
+							<p class="p-career__desc__text">
+								兵庫県川西市で生まれる。
+								まるまると太っていましたが、一度鼻血が止まらず、病院へ。とても華奢な子どもになる。
+							</p>
+						</div>
+						<div class="p-career__date">
+							<p class="p-career__date__text">
+								小学生〜中学生時代 </p>
+						</div>
+						<div class="p-career__desc">
+							<p class="p-career__desc__text">
+								大流行のファミコンを親にねだるも、「ゲームだけだからだめ。パソコンならOK」とMSXを買ってもらう。
+								MSXのゲームには飽きて、本を買ってきてはBasicの写経に勤しむ。
+							</p>
+						</div>
+						<div class="p-career__date">
+							<p class="p-career__date__text">
+								大学時代〜2000年
+							</p>
+						</div>
+						<div class="p-career__desc">
+							<p class="p-career__desc__text">
+								大阪の「トッカビ子ども会」でボランティア。卒業後、アルバイトスタッフになる。在日コリアンの子どもの放課後児童クラブのようなもの。<br>
+								大阪府八尾市の小学校で常勤講師。学校での仕事に加え、コリアンのことを中心に文化の指導のためいくつかの学校に指導に出向くことも。
+							</p>
+						</div>
+						<div class="p-career__date">
+							<p class="p-career__date__text">
+								2001年〜2012年
+							</p>
+						</div>
+						<div class="p-career__desc">
+							<p class="p-career__desc__text">
+								大阪府教員採用テストに合格。公立小学校に赴任する。
+								2つの小学校を経験。
+								校内の分担では常に情報教育、情報機器の担当。人権教育主任、体育主任、研究主任などのマネジメント職も経験。
+								学校のホームページを作成、多くの人が更新しやすいように工夫して作成するも、市内のシステム入れ替えによって公開は数ヶ月で終わる。
+								並行して、教職員組合の役員も経験、会計、機関紙編集なども担当。
+							</p>
+						</div>
+						<div class="p-career__date">
+							<p class="p-career__date__text">
+								2013年〜2015年
+							</p>
+						</div>
+						<div class="p-career__desc">
+							<p class="p-career__desc__text">
+								教職員組合の書記長（事務局長）となり、専従職員として組合の業務にあたる。組合のマネジメントにおいて、チャットツール、クラウドを導入。ブログ・FBページなどを活用して情報発信。
+								このときに、ホワイトボード・ミーティング®の認定講師資格や衛生推進員資格を取得。
+							</p>
+						</div>
+						<div class="p-career__date">
+							<p class="p-career__date__text">
+								2016年〜2020年 </p>
+						</div>
+						<div class="p-career__desc">
+							<p class="p-career__desc__text">
+								教育現場に復帰。日本語指導担当になる。組合の書記長はそのまま継続。
+								コロナ禍の学校において、チャットツールを導入。名簿管理やテストの集計において、VBAを調べつつ活用。テスト集計の工数を大幅に減らし感謝される。生活指導担当も経験。
+								この頃に、プログラミング学習にとりくみはじめるも、一旦挫折。
+							</p>
+						</div>
+						<div class="p-career__date">
+							<p class="p-career__date__text">
+								2019年〜 </p>
+						</div>
+						<div class="p-career__desc">
+							<p class="p-career__desc__text">
+								コロナ禍の中、プログラミング学習再開。Progateウェブ開発パス（Rails）を完走。Railsチュートリアル完走。Isaraの模写中にOver40WebClubに加入。学習が加速。
+								勉強会ドリブン勉強法を実践、connpassで4回の学習会の講師。
+							</p>
+						</div>
+						<div class="p-career__date">
+							<p class="p-career__date__text">
+								2021年〜 </p>
+						</div>
+						<div class="p-career__desc">
+							<p class="p-career__desc__text">
+								転勤して、新しい学校で日本語指導。
+								Over40WebClubの先輩フリーランスからコーディング〜WordPress化案件をいただいて、納品。エクプラというコミュニティでウェブ制作会社のLPコーディング案件をいただいて納品。
+								現在は、自分が所属する団体のHP構築、SNS運用中。
+
+							</p>
+						</div>
+
+					</section>
+
+			</section>
+		</div>
+
+
+		<footer class="l-footer js-footer">
+			<figure class="l-footer__logo">
+				<a href="#">
+					<img src="./assets/images/footer/footer-logo.png" alt="">
+				</a>
+			</figure>
+			<a href="" class="l-footer__cv">
+				<img src="./assets/images/footer/footer-cv.png" alt="">
+			</a>
+			<nav class="l-footer__nav">
+				<ul class="l-footer__menu">
+					<li class="l-footer__menu__item">
+						<a href="#about">
+							アバウト
+						</a>
+					</li>
+					<li class="l-footer__menu__item">
+						<a href="#works">
+							実績
+						</a>
+					</li>
+					<li class="l-footer__menu__item">
+						<a href="#skills">
+							スキル
+						</a>
+					</li>
+					<li class="l-footer__menu__item">
+						<a href="#career">
+							経歴
+						</a>
+					</li>
+
+				</ul>
+			</nav>
+			<p class="l-footer__copyright">&copy2021 WEBSON そんほんす</p>
+		</footer>
+
+		<!-- jquery -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<!-- メインのJavaScript -->
+		<script src="./assets/scripts/main.js"></script>
+	</div>
+</body>
+
+</html>

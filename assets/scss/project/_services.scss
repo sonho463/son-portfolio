@@ -1,0 +1,19 @@
+@use "../foundation/variables" as v;
+
+.p-services{
+	&__list{
+		display: flex;
+		column-gap: 3%;
+	}
+	&__item{
+		padding: 20px 3%;
+		background-color: v.$color-white;
+		border-radius: 10px;
+	}
+	&__title{
+		margin-top: 30px;
+	}
+	&__desc{
+		margin-top: 30px;
+	}
+}

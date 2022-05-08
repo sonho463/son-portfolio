@@ -1,0 +1,51 @@
+@use "../foundation/variables" as v;
+
+.p-skills__article {
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+		padding: 50px 5%;
+		@include v.mq(md){
+			flex-direction: column;
+		}
+		&:nth-of-type(odd){
+			background-color: v.$main-secondary;
+		}
+  }
+  &__icon {
+    flex: 4;
+    height: 150px;
+    width: auto;
+		&--html{
+			height: auto;
+			max-height: 150px;
+		}
+		@include v.mq(md){
+			flex:none;
+			height: 100px;
+		}
+    &__image {
+      height: 100%;
+      width: auto;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+.p-skills__article{
+	&__text-block {
+		flex: 6;
+		margin-left: 30px;
+		@include v.mq(md){
+			flex: none;
+			margin-top: 30px;
+		}
+	}
+	&__text{
+		margin-top: 20px;
+	}
+
+}
