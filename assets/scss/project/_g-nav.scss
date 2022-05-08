@@ -23,7 +23,12 @@
 		}
   }
   &__item {
-    font-size: 2.4rem;
+		font-size: 2.0rem;
+		transition: .3s;
+		&:hover{
+			transform: scale(1.2);
+			transition: .3s;
+		}
 		@include v.mq(md){
 			font-size: 1.4rem;
 		}

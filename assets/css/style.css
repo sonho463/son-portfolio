@@ -551,11 +551,12 @@ a:hover img {
 }
 
 .l-header {
-  position: sticky;
+  position: fixed;
   top: 0;
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: #f0f8ff;
+  width: 100%;
 }
 @media screen and (max-width:768px) {
   .l-header {
@@ -799,7 +800,12 @@ a:hover img {
   }
 }
 .p-g-nav__item {
-  font-size: 2.4rem;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+.p-g-nav__item:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
 }
 @media screen and (max-width:768px) {
   .p-g-nav__item {
@@ -843,6 +849,7 @@ a:hover img {
 }
 
 .p-mv {
+  margin-top: 110px;
   background-color: #f0f8ff;
   font-family: senobi-gothic, sans-serif;
   font-weight: 400;
@@ -882,7 +889,7 @@ a:hover img {
   display: block;
   position: absolute;
   right: 0;
-  bottom: -80%;
+  bottom: -220%;
   background-image: url(../images/mv/yellow-circle.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -926,19 +933,6 @@ a:hover img {
   .p-mv__lead__text {
     font-size: 3.2rem;
   }
-}
-
-.p-mv__circle-left {
-  position: absolute;
-  width: 210px;
-  top: 5%;
-  left: 10%;
-}
-.p-mv__circle-right {
-  position: absolute;
-  width: 150px;
-  right: 5%;
-  bottom: 5%;
 }
 
 .p-about__bg {
@@ -1092,18 +1086,22 @@ a:hover img {
   justify-content: center;
   width: 100%;
   height: auto;
-  padding-top: 20px;
+  padding: 20px 5% 0;
 }
 .p-works__title {
   font-family: senobi-gothic, sans-serif;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
+  line-height: 1.1;
   font-weight: bold;
   text-align: center;
   letter-spacing: -0.2em;
 }
+.p-works__image {
+  margin-top: 10px;
+}
 .p-works__text {
   margin-top: 40px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   letter-spacing: 0.05em;
   padding-bottom: 80px;
 }
@@ -1282,6 +1280,7 @@ a:hover img {
   padding: 20px 3%;
   background-color: #fff;
   border-radius: 10px;
+  box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.15);
 }
 .p-services__title {
   margin-top: 30px;

@@ -1,6 +1,7 @@
 @use "../foundation/variables" as v;
 
 .p-mv {
+	margin-top: 110px;
   background-color: v.$main-secondary;
   font-family: senobi-gothic, sans-serif;
   font-weight: 400;
@@ -39,7 +40,7 @@
     display: block;
     position: absolute;
     right: 0;
-    bottom: -80%;
+    bottom: -220%;
     background-image: url(../images/mv/yellow-circle.png);
     background-size: contain;
 		background-repeat: no-repeat;
@@ -77,20 +78,5 @@
 		@include v.mq(sm){
 			font-size: 3.2rem;
 		}
-  }
-}
-
-.p-mv {
-  &__circle-left {
-    position: absolute;
-    width: 210px;
-    top: 5%;
-    left: 10%;
-  }
-  &__circle-right {
-		position: absolute;
-    width: 150px;
-    right: 5%;
-    bottom: 5%;
   }
 }

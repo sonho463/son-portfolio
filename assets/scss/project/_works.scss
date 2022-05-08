@@ -63,18 +63,22 @@
     justify-content: center;
     width: 100%;
     height: auto;
-		padding-top: 20px;
+		padding: 20px 5% 0;
   }
   &__title {
     font-family: v.$title-font;
-    font-size: 3.2rem;
+    font-size: 2.4rem;
+		line-height: 1.1;
     font-weight: bold;
     text-align: center;
 		letter-spacing: -.2em;
   }
+	&__image{
+		margin-top: 10px;
+	}
   &__text {
     margin-top: 40px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     letter-spacing: 0.05em;
     padding-bottom: 80px;
     @include v.mq(lg) {
